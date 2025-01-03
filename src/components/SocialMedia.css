@@ -1,0 +1,167 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+  background: #f8f7fa;
+}
+
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+  margin-left: 240px;
+  background-color: #f5f2ff;
+}
+
+.social-media-container {
+  padding: 2rem;
+}
+
+.social-media-container h1 {
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.social-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.social-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+}
+
+.social-card.linkedin {
+  border-top: 4px solid #0077B5;
+}
+
+.social-card.instagram {
+  border-top: 4px solid #E1306C;
+}
+
+.social-card.twitter {
+  border-top: 4px solid #1DA1F2;
+}
+
+.social-card.tiktok {
+  border-top: 4px solid #000000;
+}
+
+.platform-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.platform-header i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.platform-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.stat-value.positive {
+  color: #4CAF50;
+}
+
+.stat-value.negative {
+  color: #f44336;
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.25rem;
+  color: #666;
+}
+
+.error-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 1.25rem;
+  color: #f44336;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Platform-specific icon colors */
+.linkedin .platform-header i {
+  color: #0077B5;
+}
+
+.instagram .platform-header i {
+  color: #E1306C;
+}
+
+.twitter .platform-header i {
+  color: #1DA1F2;
+}
+
+.tiktok .platform-header i {
+  color: #000000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-media-container {
+    padding: 1rem;
+  }
+
+  .social-card {
+    padding: 1rem;
+  }
+
+  .stat-value {
+    font-size: 1.25rem;
+  }
+} 

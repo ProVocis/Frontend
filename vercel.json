@@ -1,0 +1,11 @@
+{
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node",
+      "config": {
+        "prebuild": "echo \"body{margin:0;padding:0;}\" > src/index.css"
+      }
+    }
+  ]
+} 

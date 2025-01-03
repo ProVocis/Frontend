@@ -16,6 +16,7 @@
     "recharts": "^2.15.0"
   },
   "scripts": {
+    "prebuild": "echo \"body{margin:0;padding:0;}\" > src/index.css",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
